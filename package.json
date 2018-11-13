@@ -4,14 +4,16 @@
   "description": "SendIT is a courier service that helps users deliver parcels to different destinations. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "babel server.js --out-dir build",
     "dev-start": "babel-watch server.js"
   },
   "author": "Marizu-Ibewiro Makozi (marizumakozi97@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
     "moment": "^2.22.2",
     "uuid": "^3.3.2"
   },
