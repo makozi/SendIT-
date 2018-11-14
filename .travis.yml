@@ -11,4 +11,5 @@ after_success:
   - npm install istanbul
   - npm install coveralls
   - npm run coveralls
+  - npm run coverage
 
