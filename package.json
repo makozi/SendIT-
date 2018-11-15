@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "build": "babel server.js --out-dir build",
-    "dev-start": "babel-watch server.js"
+    "dev-start": "babel-watch server.js",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "author": "Marizu-Ibewiro Makozi (marizumakozi97@gmail.com)",
   "license": "ISC",
