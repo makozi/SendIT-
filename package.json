@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
+    "cover": "istanbul cover _mocha",
     "build": "babel server.js --out-dir build",
     "dev-start": "babel-watch server.js",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "Marizu-Ibewiro Makozi (marizumakozi97@gmail.com)",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-watch": "^2.0.7",
     "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
     "karma": "^3.1.1",
     "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0"
