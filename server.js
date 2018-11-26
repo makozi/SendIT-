@@ -23,7 +23,7 @@ app.use(express.json());
 app.get('/',(req,res) => {
     return res.status(200).json({
         status: '200',
-        message: 'Wola, Congatulations, Your endpoints are working'
+        message: 'Congatulations, Your endpoints are working'
     });
     
     // .send({'message': 'Wola, Congatulations, Your endpoints are working'});
