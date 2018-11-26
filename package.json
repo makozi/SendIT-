@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "cover": "istanbul cover _mocha",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "build": "babel server.js --out-dir build",
     "dev-start": "babel-watch server.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
@@ -13,10 +13,14 @@
   "author": "Marizu-Ibewiro Makozi (marizumakozi97@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.3.0",
     "moment": "^2.22.2",
+    "pg": "^7.6.1",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
