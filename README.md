@@ -61,3 +61,60 @@ Testing is used at key checkpoints in the overall process to determine whether o
 ```bash
 npm run test
 ```
+
+
+
+
+<h3>ENDPOINTS</h3>
+<hr>
+<table>
+  <tr>
+      <th>Request</th>
+      <th>End Point</th>
+      <th>Action</th>
+  </tr>
+  <tr>
+      <td>POST</td>
+      <td>/api/v1/parcels</td>
+      <td>Create a new contact</td>
+  </tr>
+
+  <tr>
+      <td>GET</td>
+      <td>/api/v1/parcels</td>
+      <td>Get all parcels</td>
+  </tr>
+  <tr>
+        <td>GET</td>
+        <td>/api/v1/parcels/:id</td>
+        <td>Get a parcel by parcelid</td>
+  </tr>
+   <tr>
+      <td>PUT</td>
+      <td>/api/v1/parcels/:id</td>
+      <td>Update a parcel by parcelid</td>
+  </tr>
+ 
+  <tr>
+        <td>DELETE</td>
+        <td>/api/v1/parcels/:id</td>
+        <td>Delete parcel by parcelid</td>
+  </tr>
+   
+  <tr>
+        <td>GET</td>
+        <td>/api/users/:Id/parcels</td>
+        <td>Fetch all orders by a user</td>
+  </tr>
+
+   
+  
+  
+
+</table>
+<br>
+
+
+
+## Author
+[Marizu-Ibewiro Makozi](https://makozi.netlify.com)
