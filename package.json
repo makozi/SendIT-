@@ -8,7 +8,8 @@
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "build": "babel server.js --out-dir build",
     "dev-start": "babel-watch server.js",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "start": "node server.js"
   },
   "author": "Marizu-Ibewiro Makozi (marizumakozi97@gmail.com)",
   "license": "ISC",
